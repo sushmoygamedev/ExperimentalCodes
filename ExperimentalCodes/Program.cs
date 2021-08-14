@@ -118,7 +118,50 @@ namespace ExperimentalCodes
             {
                 Console.WriteLine("There is no bomb, relax!");
             }*/
-            
+
+            /*char ch = 'c';
+            Console.WriteLine(Convert.ToInt32(ch));
+            if (char.IsUpper(ch))
+            {
+                Console.WriteLine(Convert.ToInt32(char.ToLower(ch)));
+            }
+            else
+            {
+                Console.WriteLine(Convert.ToInt32(char.ToUpper(ch)));
+            }*/
+
+            /*string str = "Consecutive".ToLower();
+            char[] strCh = str.ToCharArray();
+            Array.Sort(strCh);
+
+            bool flag = true;
+            for (int i = 0; i < strCh.Length-1; i++)
+            {
+                if (strCh[i] == strCh[i+1])
+                {
+                    flag = false;
+                }
+            }
+            Console.WriteLine(flag);*/
+
+
+            /*string str = "1/2";
+            string[] strSplit = str.Split('/');
+            double result = 0;
+            bool frac1 = false;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == '/')
+                {
+                    result = Convert.ToDouble(strSplit[0]) / Convert.ToDouble(strSplit[1]);
+                }
+            }
+            Console.WriteLine(result);
+            if (result > 1 && result != 1)
+            {
+                frac1 = true;
+            }
+            Console.WriteLine(frac1);*/
         }
     }
 }
