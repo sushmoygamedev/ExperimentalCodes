@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ExperimentalCodes
+﻿namespace ExperimentalCodes
 {
     class Program
     {
@@ -162,6 +160,54 @@ namespace ExperimentalCodes
                 frac1 = true;
             }
             Console.WriteLine(frac1);*/
+
+            /*string str = "4556364607935616";
+            string str2 = string.Empty;
+            
+            for (int i = 0; i < str.Length - 4; i++)
+            {
+                str2 += "#";
+            }
+            Console.WriteLine(str2 + str.Substring(str.Length - 4));*/
+
+            /* string str1 = " ";
+             string str2 = " ";
+
+
+             if (string.IsNullOrEmpty(str1) && string.IsNullOrEmpty(str2))
+             {
+                 Console.WriteLine(true);
+                 Console.WriteLine(str1="empty");
+                 Console.WriteLine(str2="empty");
+             }
+             else
+             {
+                 Console.WriteLine(str1[0] + " == " + str2[str2.Length - 1]);
+                 Console.WriteLine(str1[str1.Length - 1] + " == " + str2[0]);
+                 if (str1.StartsWith(str2[str2.Length - 1]) && str1.EndsWith(str2[0]))
+                 {
+                     Console.WriteLine(true);
+                 }
+                 else
+                 {
+                     Console.WriteLine(false);
+                 }
+             }*/
+
+            /*
+            if (str1[0] == str2[str2.Length - 1] && str1[str1.Length - 1] == str2[0])
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }*/
+
+            string str = "potatopotato";
+            int count = 0;
+
+            
         }
     }
 }
