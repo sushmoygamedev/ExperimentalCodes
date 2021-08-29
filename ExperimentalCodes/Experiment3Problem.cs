@@ -5,16 +5,16 @@
         public void Solve3Problem()
         {
             /*string str = "%fd76$fd(-)6GvKlO.";
-            string newStr = string.Empty;
+                string newStr = string.Empty;
 
-            for (int i = 0; i < str.Length; i++)
-            {
-                if (char.IsLetterOrDigit(str[i]) || str[i] == ' ' || str[i] == '-' || str[i] == '_')
+                for (int i = 0; i < str.Length; i++)
                 {
-                    newStr += str[i];
+                    if (char.IsLetterOrDigit(str[i]) || str[i] == ' ' || str[i] == '-' || str[i] == '_')
+                    {
+                        newStr += str[i];
+                    }
                 }
-            }
-            Console.WriteLine(newStr);*/
+                Console.WriteLine(newStr);*/
 
             /*string str = "-123) 456-7890";
             bool isValid = false;
@@ -36,6 +36,14 @@
                 Console.WriteLine(2 * i + 4);
             }
             Console.WriteLine(sum);*/
+
+            //int num = 100000000;
+            /*Console.WriteLine(String.Format("{0:n0}", 1000)); //1,000.00
+             Console.WriteLine(String.Format("{0:n}", 1000)); //1,000*/
+            /*string commaSeperated = num.ToString("#,##0");
+            Console.WriteLine(commaSeperated);*/
+            /*string commaSep = num.ToString("n0");
+            Console.WriteLine(commaSep);*/
         }
     }
 }
