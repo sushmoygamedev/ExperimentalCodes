@@ -7,7 +7,49 @@ namespace ExperimentalCodes
     {
         static void Main(string[] args)
         {
-            Regex pattern = new Regex("(potato)");
+            int y = 1000;
+            int z = 1010;
+            int year = 0;
+            int betweenYear = 0;
+
+            for (int i = 0; i <= z; i++)
+            {
+                year = y + i;
+
+                for (int j = 10; j <= 21; j++)
+                {
+                    betweenYear = j * 100;
+
+                    if (year > betweenYear - 1 && year <= betweenYear)
+                    {
+                        if (year == betweenYear)
+                        {
+                            Console.WriteLine(year + ": " + (year / 100));
+                        }
+                        else
+                        {
+                            Console.WriteLine(year + ": " + (year / 100 + 1));
+                        }
+                    }
+                    /*Console.WriteLine(betweenYear - 1);
+                    Console.WriteLine(betweenYear);
+                    Console.WriteLine();*/
+                }
+
+                /*if (year > 1099 && year <= 1199)
+                {
+                    if (year == 1100)
+                    {
+                        Console.WriteLine(year + ": " + (year / 100));
+                    }
+                    else
+                    {
+                        Console.WriteLine(year + ": " + (year / 100 + 1));
+                    }
+                }*/
+            }
+
+            /*Regex pattern = new Regex("(potato)");
             string str = "appleapplepotatopotato";
 
             Match match = pattern.Match(str);
@@ -15,7 +57,7 @@ namespace ExperimentalCodes
             for (int i = 0; i < match.Groups.Count; i++)
             {
                 Console.WriteLine(match.Groups[i]);
-            }
+            }*/
 
             /*MatchCollection matchCol = pattern.Matches(str);
             Console.WriteLine(matchCol.Count);*/
