@@ -90,6 +90,28 @@ namespace ExperimentalCodes
             {
                 Console.WriteLine(i);
             }*/
+
+            /*Console.WriteLine("Input Year Between 100 to MAX");
+            Console.Write("Input Start Year: ");
+            string yearStartInput = Console.ReadLine();
+            Console.Write("Input End Year: ");
+            string yearEndInput = Console.ReadLine();
+
+            int yearStart = Convert.ToInt32(yearStartInput) / 100;
+            int yearEnd = Convert.ToInt32(yearEndInput) / 100;
+            const int yearT = 100;
+
+            for (int i = yearStart * yearT; i <= yearEnd * yearT; i++)
+            {
+                if (i % 100 == 00 || i % 1000 == 000)
+                {
+                    System.Console.WriteLine(i + ": " + i / 100 + "th Century");
+                }
+                else
+                {
+                    System.Console.WriteLine(i + ": " + (i / 100 + 1) + "th Century");
+                }
+            }*/
         }
     }
 }
