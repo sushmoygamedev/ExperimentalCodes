@@ -28,6 +28,19 @@
             }
             Console.WriteLine(isValid);*/
 
+            /*string str = "(123) 4533-892";
+            bool result = false;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (char.IsDigit(str[i]) && str[0] == '(' && str[4] == ')' && str[5] == ' ' && str[9] == '-' && str.Length == 14)
+                {
+                    result = true;
+                    break;
+                }
+            }
+            Console.WriteLine(result);
+            Console.WriteLine(str.Length);*/
+
             /*int n = 13;*/
             /*int sum = 0;
             for (int i = 1; i <= 13; i++)
@@ -44,6 +57,8 @@
             Console.WriteLine(commaSeperated);*/
             /*string commaSep = num.ToString("n0");
             Console.WriteLine(commaSep);*/
+
+
         }
     }
 }
