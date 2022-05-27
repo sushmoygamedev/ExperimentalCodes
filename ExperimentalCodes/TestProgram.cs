@@ -2,7 +2,7 @@
 
 namespace ExperimentalCodes
 {
-    class Program
+    class TestProgram
     {
         #region Check for Angrams Sorted String Function
         /*public static string sortedString(string str)
@@ -22,7 +22,7 @@ namespace ExperimentalCodes
             return (str + ": " + sortStr1Char);
         }*/
         #endregion
-        static void Main(string[] args)
+        static void AllTest()
         {
             /*// Declaring an integer array of size 11.
             int[] arr = { 1, 2, 99, 9, 8,
@@ -1794,6 +1794,192 @@ namespace ExperimentalCodes
                 newStr += ' ';
             }
             Console.WriteLine(newStr);*/
+
+            #region Alterning Caps
+            /*string str = "How are you?";
+            char[] strChar = str.ToCharArray();
+            int charCounter = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == ' ')
+                {
+                    continue;
+                }
+                if (charCounter % 2 == 0)
+                {
+                    strChar[i] = char.ToUpper(strChar[i]);
+                }
+                else
+                {
+                    strChar[i] = char.ToLower(strChar[i]);
+                }
+                charCounter++;
+                Console.WriteLine(charCounter);
+            }
+            string newStr = new string(strChar);
+            Console.WriteLine(newStr);*/
+            #endregion
+
+            /*string str = "OMG this website is awesome!";
+            char[] strChar = str.ToCharArray();
+            int j = 0;
+            for (int i = 0; i < strChar.Length; i++)
+            {
+                if (strChar[i] == ' ')
+                {
+                    continue;
+                }
+                if (j % 2 == 0)
+                {
+                    strChar[i] = Char.ToUpper(strChar[i]);
+                }
+                else
+                {
+                    strChar[i] = Char.ToLower(strChar[i]);
+                }
+                j++;
+            }
+            string newStr = new string(strChar);
+            Console.WriteLine(newStr);*/
+
+            #region bigram test code
+            /*int[] num = new int[5];
+
+            for (int i = 0; i < bigram.Length; i++)
+            {
+                *//*Console.WriteLine(i);*//*
+                for (int j = 0; j < strList.Length; j++)
+                {
+                    *//*Console.WriteLine(j);*//*
+                    if (strList[j].Contains(bigram[i]))
+                    {
+                        num[j] = 0;
+                        num[j]++;
+                        //Console.WriteLine(num[j]);
+                        //break;
+                    }
+                    else
+                    {
+                        num[j] = 0;
+                        //Console.WriteLine(num[j]);
+                        //break;
+                    }
+                    Console.WriteLine(num[j]);
+                }
+                *//* num = 0;
+                 Console.WriteLine(num);*/
+            }
+            //Console.WriteLine(num);
+
+            //Console.WriteLine(num);
+
+            /*string str = "Sohanur Rahman Shihab";
+            string[] strSplit = str.Split(' ');
+            int countH = 0;
+
+            for (int i = 0; i < strSplit.Length; i++)
+            {
+                if (strSplit[i].Contains("ha"))
+                {
+                    countH = 0;
+                    countH++;
+                }
+                *//*Console.WriteLine(strSplit[i]);*/
+            /*for (int j = 0; j < strSplit[i].Length; j++)
+            {
+                *//*Console.WriteLine(strSplit[i][j]);*/
+            /*if (strSplit[i][j] == 'h' || strSplit[i][j] == 'H')
+            {
+                countH = 0;
+                countH++;
+            }*//*
+        }*//*
+    }
+    Console.WriteLine(countH);*/
+
+            /*for (int i = 0; i < strList.Length; i++)
+            {
+                for (int j = 0; j < bigram.Length; j++)
+                {
+
+                    if (strList[i].Contains(bigram[j]))
+                    {
+                        //num++;
+                        Console.WriteLine(true);
+                        
+                    }
+                    else
+                    {
+                        Console.WriteLine(false);
+                    }
+                }
+            }*/
+            //Console.WriteLine(num == bigram.Length);
+
+            /*string[] strList = new string[] { "right 10", "up 50", "left 30", "down 10" };
+            for (int i = 0; i < strList.Length; i++)
+            {
+                string strListItem = strList[i];
+                int spaceFihd = strListItem.IndexOf(' ');
+                Console.WriteLine(strListItem.Substring(spaceFihd+1));
+
+                
+            }*/
+            #endregion
+
+            #region PROGRAM WITH ASCII
+            /*string num = "102302";
+            int result = 0;
+            
+            for (int i = 0; i < num.Length; i++)
+            {
+                if (num[i] < 48 || num[i] > 57)
+                {
+                    Console.WriteLine("problem");
+                }
+                else
+                {
+                    result = result * 10 + (num[i] - 48);
+                }
+                
+            }
+            Console.WriteLine(result);
+            Console.WriteLine(result.GetType());*/
+
+            /*char ch = 'a';
+            if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')
+            {
+                Console.WriteLine((int)ch);
+            }*/
+
+            /*string str = "is amazing edabit something";
+            string[] strS = str.Split(' ');
+            string word = "";
+            int i = 0;
+            foreach(string item in strS)
+            {
+                if (item.Length > i )
+                {
+                    word = item;
+                    i = item.Length;
+                }
+                
+            }
+            Console.WriteLine(word);*/
+
+            /* string[] strArr = new string[str.Length];
+             string temp = string.Empty;
+
+             for (int i = 0; i < str.Length; i++)
+             {
+                 if (str[i] == ' ')
+                 {
+                     temp += str[i];
+                     continue;
+                 }
+                 strArr[i] += temp;
+                 temp = "";
+             }*/
+            #endregion
         }
     }
-}
